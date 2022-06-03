@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+TANGGAL  : 03 JUNI 2022
+NAMA     : UMAR SAID ADI PRANOTO
+NIM      : 10119920
+KELAS    : IF10
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.26dp"
+                android:layout_marginTop="22.99dp"
+                app:srcCompat="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="35.98dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Form Pengisian Data"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Jenis Tes"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Harus Diisi"
+                    android:textColor="#16A75C" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#16A75C"
+                    android:text="Rapid Antigen"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#16A75C"
+                    android:text="PCR"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Tanggal Terkonfirmasi"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Harus Diisi"
+                    android:textColor="#16A75C" />
+
+            </LinearLayout>
+
+            <EditText
+
+                style="@style/input_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:hint="Pilih Tanggal"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:paddingLeft="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="NIK"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                style="@style/input_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:hint="Masukkan NIK"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingLeft="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Nama"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Harus Diisi"
+                    android:textColor="#16A75C" />
+
+            </LinearLayout>
+
+            <EditText
+                style="@style/input_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:hint="Masukkan Nama"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingLeft="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Tanggal Lahir"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Harus Diisi"
+                    android:textColor="#16A75C" />
+
+            </LinearLayout>
+
+            <EditText
+                style="@style/input_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:hint="Pilih Tanggal"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingLeft="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Jenis Kelamin"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Harus Diisi"
+                    android:textColor="#16A75C" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#16A75C"
+                    android:text="Laki - laki"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#16A75C"
+                    android:text="Perempuan"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Hubungan Dengan Anda"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Harus Diisi"
+                    android:textColor="#16A75C" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#16A75C"
+                    android:text="Orangtua"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#16A75C"
+                    android:text="Suami/Istri"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#16A75C"
+                    android:text="Anak"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#16A75C"
+                    android:text="Kerabat Lainnya"
+                    android:textColor="@color/black"/>
+
+            </RadioGroup>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dengan ini saya menyetujui bahwa data yang saya isikan adalah benar"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:buttonTint="#16A75C"
+                android:textSize="12dp"
+                android:layout_marginLeft="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/btn_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="Selanjutnya"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
